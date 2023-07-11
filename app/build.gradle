@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.flipbay.observablefields'
+    namespace 'com.flipbay.lamdacallbacks'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.flipbay.observablefields"
+        applicationId "com.flipbay.lamdacallbacks"
         minSdk 24
         targetSdk 33
         versionCode 1

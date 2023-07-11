@@ -1,10 +1,10 @@
-package com.flipbay.observablefields
+package com.flipbay.lamdacallbacks
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
-import androidx.lifecycle.viewmodel.viewModelFactory
-import com.flipbay.observablefields.databinding.ActivityMainBinding
+import com.flipbay.lamdacallbacks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         binding?.viewModel = viewModel
+
+        viewModel.getCallbackAfterDelay { response ->
+            //Capture Callback Here
+            Log.d(MainActivity::class.java.name,response)
+            binding?.textLive?.text = response
+        }
     }
 
     override fun onDestroy() {

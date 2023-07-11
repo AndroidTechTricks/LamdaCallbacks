@@ -1,4 +1,4 @@
-package com.flipbay.observablefields
+package com.flipbay.lamdacallbacks
 
 import org.junit.Test
 
