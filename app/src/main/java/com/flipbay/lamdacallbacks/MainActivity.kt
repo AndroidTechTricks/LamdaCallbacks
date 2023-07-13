@@ -23,6 +23,16 @@ class MainActivity : AppCompatActivity() {
             Log.d(MainActivity::class.java.name,response)
             binding?.textLive?.text = response
         }
+
+        viewModel.getTwoParamsInCallback { stringValue, intValue ->
+            // Similarly We can have multiple values in the same order described in callback
+            Log.d(MainActivity::class.java.name, "$stringValue $intValue")
+        }
+
+        val data = viewModel.returnValueOfMethod { returnValue ->
+            returnValue + 10
+        }
+        Log.d(MainActivity::class.java.name, data.toString())
     }
 
     override fun onDestroy() {
