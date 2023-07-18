@@ -1,7 +1,7 @@
 # Higher Order Function & Lambdas In Kotlin
 ----
 
-In Kotlin, **`higher-order functions*`* are special types of functions that **`can take other functions as parameters or return functions as results.`* It's like treating functions as values that can be passed around and manipulated just like any other data.
+In Kotlin, *`higher-order functions`* are special types of functions that *`can take other functions as parameters or return functions as results.`* It's like treating functions as values that can be passed around and manipulated just like any other data.
 
 -- Here we will understand the variations of higher order fucntions with simple examples.
 
